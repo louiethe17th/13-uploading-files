@@ -5,3 +5,11 @@ body {
 img {
     max-width: 400px;
 }
+
+body{
+    text-align: center;
+}
+
+li{
+    list-style: none;
+}
