@@ -1,15 +1,22 @@
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <link rel="stylesheet" href="/style.css" />
-</head>
+    <head>
+        <link rel="stylesheet" href="/style.css" />
+    </head>
 
-<body>
+        <body>
+        <div>
+            <form method="POST" enctype="multipart/form-data" action="/">
+                File to upload: <input type="file" name="file" />
+                <input type="submit" value="Upload" />
+            </form>
+        </div>
 
-Word Count: <p th:text="${words}"></p>
-Letter Count: <p th:text="${letters}"></p>
-Sentences: <p th:text="${sentences}"></p>
+            Word Count: <p th:text="${words}"></p>
+            Syllable Count: <p th:text="${syllables}"></p>
+            Sentences: <p th:text="${sentences}"></p>
+            Flesch: <p th:text="${flesch}"></p>
 
 
-</body>
+        </body>
 
 </html>
