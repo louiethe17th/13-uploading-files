@@ -23,6 +23,15 @@
                     <p th:if="${file.endsWith('jpg')}">
                       <img th:src="${file}" />
                     </p>
+
+                    <p th:if="${file.endsWith('png')}">
+                        <img th:src="${file}" />
+                    </p>
+
+                    <p th:if="${file.endsWith('jpeg')}">
+                        <img th:src="${file}" />
+                    </p>
+
                 </li>
             </ul>
         </div>
